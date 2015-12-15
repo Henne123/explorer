@@ -1,11 +1,11 @@
-Iquidus Explorer - 1.3.3
+custom Explorer - 1.3.3
 ================
 
 An open source block explorer written in node.js.
 
 ### Links
 
-*  [Demo](http://explorer.iquidus.co.nz/) - Demo site running with Razor; Market pages (mintpal, bittrex), Top 100 (received, balance)
+*  [Demo](http://explorer.custom.co.nz/) - Demo site running with Razor; Market pages (mintpal, bittrex), Top 100 (received, balance)
 *  [HeavyChain](http://heavychain.info/) - HeavyCoin block explorer; Heavy reward/votes page, Top 100 (received, balance)
 
 ### Requires
@@ -16,7 +16,7 @@ An open source block explorer written in node.js.
 
 ### Get the source
 
-    git clone https://github.com/iquidus/explorer explorer
+    git clone https://github.com/custom/explorer explorer
 
 ### Install node modules
 
@@ -67,7 +67,7 @@ sync.js (located in scripts/) is used for updating the local databases. This scr
 
 ### Wallet
 
-Iquidus Explorer is intended to be generic so it can be used with any wallet following the usual standards(PoW). The wallet must be running with atleast the following flags
+custom Explorer is intended to be generic so it can be used with any wallet following the usual standards(PoW). The wallet must be running with atleast the following flags
 
     -daemon -txindex
 
@@ -109,7 +109,7 @@ Where [SIZE] is an integer higher than the default.
 
 ### License
 
-Copyright (c) 2014, Iquidus Technology  
+Copyright (c) 2014, custom Technology  
 Copyright (c) 2014, Luke Williams  
 All rights reserved.
 
@@ -123,7 +123,7 @@ modification, are permitted provided that the following conditions are met:
   this list of conditions and the following disclaimer in the documentation
   and/or other materials provided with the distribution.
 
-* Neither the name of Iquidus Technology nor the names of its
+* Neither the name of custom Technology nor the names of its
   contributors may be used to endorse or promote products derived from
   this software without specific prior written permission.
 

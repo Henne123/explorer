@@ -1,0 +1,103 @@
+/*
+  This file must be valid JSON. But comments are allowed
+
+  Please edit settings.json, not settings.json.template
+*/
+{
+  // name your instance!
+  "title": "WorldLeadCurrency",
+  
+  "address": "109.73.173.119:81",
+  // coin name
+  "coin": "WorldLeadCurrency",
+
+  // coin symbol
+  "symbol": "WLC",
+
+  // favicon
+  "favicon": "public/favicon.ico",
+  
+  // port to listen for requests on.
+  "port" : 81,
+
+  // database settings (MongoDB)
+  "dbsettings": {
+    "database": "explorer-wlc2",
+    "address": "127.0.0.1",
+    "port": 27017
+  },
+  
+  //update script settings
+  "update_timeout": 10,
+  "check_timeout": 250,
+
+  // wallet settings
+  "wallet": {
+    "host": "127.0.0.1",
+    "port": 27102,
+    "user": "wlcuser",
+    "pass": "4RNEvAbRFjrTGncqGuofuXQQZM8nTS4NDFoBCVBwL3Jz"
+  },
+  
+  // confirmations
+  "confirmations": 40,
+
+  // language settings
+  "locale": "locale/en.json",
+
+  // menu settings
+  "display": {
+    "api": true,
+    "markets": false,
+    "richlist": true,
+    "twitter": false,
+    "search": true
+  },
+
+  // index page (valid options for difficulty are POW or POS)
+  "index": {
+    "show_hashrate": false,
+    "difficulty": "POW",
+  },
+  
+  // ensure links on API page are valid
+  "api": {
+    "blockindex": 100,
+    "blockhash": "2f6eedc0fcd6b89003cbb301c3ffba5f2294c814a0f8cbc1b921f50449e66f19",
+    "txhash": "df104f091e2548acd11865eb8b05798aacb2bc27a204ee580bd4c0dea523f82a",
+    "address": "EXAMPLEWSmMJGDCXeP2wGCTJn74js1s5VcNqbjpg6"
+  },
+  
+  // market settings
+  "markets": {
+    "coin": "WLC",
+    "exchange": "BTC",
+    "mintpal": false,
+    "bittrex": true,
+    "default": "bittrex"
+  },
+
+  // twitter
+  "twitter": "custom",
+
+  //genesis
+  "genesis_tx": "e399be31d62cef5791bd0f944e3a291fb4b22cf5c6528835ce60922977722785",
+  "genesis_block": "000000004f7ca0e7345a6c29b19a2d555fe922540adfdd74aeaa2cee98d52d85",  
+
+  //heavy (enable/disable additional heavy features)
+  "heavy": false,
+
+  //amount of txs to index per address (stores latest n txs)
+  "txcount": 20,
+  
+  // how to calculate current coin supply
+  // COINBASE : total sent from coinbase (PoW)
+  // GETINFO : retreive from getinfo api call (PoS)
+  // HEAVY: retreive from heavys getsupply api call
+  "supply": "COINBASE",
+
+  // how to acquire network hashrate
+  // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s
+  // netmhashps: uses getmininginfo.netmhashpsm returns in MH/s
+  "nethash": "getnetworkhashps"
+}

@@ -5,8 +5,9 @@ block content
   .row(style='margin-top:5px;')
     .col-md-12(style='text-align:center;')
       img(src='/images/logo.png' style='width:80px;margin: 0px auto 15px auto;')
+    img.qrcode.pull-right.hidden-xs(src='/qr/#{address.a_id}')
   .col-xs-12.col-md-10.col-md-offset-1
-    .panel.panel-default.panel-iquidus.panel-address-summary
+    .panel.panel-default.panel-custom.panel-address-summary
       .panel-heading(style='position:relative;')        
         strong #{settings.symbol} Address: #{address.a_id}
       table.table.table-bordered.table-striped.summary-table 
@@ -48,12 +49,12 @@ block content
                   a(href='/address/#{address.a_id}/#{settings.txcount}', role='menuitem', tabindex='-1') #{settings.txcount}
     each tx in txs 
       - var time = format_unixtime(tx.timestamp)      
-      .panel.panel-default.panel-iquidus
+      .panel.panel-default.panel-custom
         .panel-heading
           strong txid: #{tx.txid}
           a(href='/tx/#{tx.txid}')
-            span.glyphicon.glyphicon-eye-open.pull-right.glow-inverse
-          strong.pull-right(style='padding-right:10px;') #{time}
+            span.glyphicon.glyphicon-eye-open.pull-right.glow-inverse.hidden-xs
+          strong.pull-right.hidden-xs(style='padding-right:10px;') #{time}
         .panel-body(style='padding:0px;')
           .col-md-6(style='padding:0px;')
             table.table.table-bordered.table-striped.summary-table 

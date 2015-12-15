@@ -78,7 +78,7 @@ block content
     .col-md-2
       div#chart3.pull-right(style="width:210px;height:205px;margin-top:-10px;margin-right:10px;")
     .col-md-8
-      .panel.panel-default.panel-iquidus
+      .panel.panel-default.panel-custom
         .panel-heading
           h3.panel-title #{settings.locale.rl_wealth} (#{settings.symbol})
         table.table.table-hover.history-table.table-bordered(cellspacing="0")
@@ -116,13 +116,13 @@ block content
               td #{parseFloat(distd.percent).toFixed(2)}
               td #{parseFloat(diste.percent).toFixed(2)}
       center
-        label.label.label-iquidus #{settings.locale.ex_supply}: #{stats.supply.toFixed(8)} (#{settings.symbol})
+        label.label.label-custom #{settings.locale.ex_supply}: #{stats.supply.toFixed(8)} (#{settings.symbol})
     .col-md-2
       div#chart2.pull-left(style="width:210px;height:240px;margin-top:-20px;")
     
   .row
     .col-md-6
-      .panel.panel-default.panel-iquidus
+      .panel.panel-default.panel-custom
         .panel-heading
           h3.panel-title #{settings.locale.rl_received_coins} 
         table.table.table-hover.history-table.table-bordered(cellspacing="0")
@@ -145,7 +145,7 @@ block content
                 td
                   =item.received.toFixed(8)
     .col-md-6
-      .panel.panel-default.panel-iquidus
+      .panel.panel-default.panel-custom
         .panel-heading
           h3.panel-title #{settings.locale.rl_current_balance} 
         table.table.table-hover.history-table.table-bordered(cellspacing="0")

@@ -2,7 +2,7 @@ extends layout
 
 block content
   .col-md-12.col-xs-12
-    .panel.panel-default.panel-iquidus
+    .panel.panel-default.panel-custom
       .panel-heading
         strong #{settings.locale.api_title}
       .panel-body
@@ -113,7 +113,9 @@ block content
     
           *  **address (/address/hash)**  
              [#{address}/address/#{hashes.address}](/address/#{hashes.address})
-        
+
+          *  **qrcode (/qr/hash)**  
+             [#{address}/qr/#{hashes.address}](/qr/#{hashes.address})
 
     .footer-padding
 

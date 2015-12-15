@@ -13,7 +13,7 @@ block content
           button.close(type='button', data-dismiss='alert') ×
           strong #{settings.locale.ex_error} : #{error}
   .col-md-12
-    .panel.panel-default.panel-iquidus
+    .panel.panel-default.panel-custom
       .panel-heading
         strong #{settings.locale.ex_title} - #{settings.coin} 
       .panel-body
@@ -28,7 +28,7 @@ block content
               span.input-group-btn
                 button.btn.btn-success(type='submit') #{settings.locale.ex_search_button}
         .hidden-md.hidden-lg.col-xs-12
-    .panel.panel-default.panel-iquidus
+    .panel.panel-default.panel-custom
       .panel-heading
         strong #{settings.locale.ex_summary}
       table.table.table-bordered.summary-table 
@@ -69,7 +69,7 @@ block content
             td #{t_sent} 
             td.hidden-xs #{time}
             td.hidden-xs #{stats.supply.toFixed(8)}
-    .panel.panel-default.panel-iquidus
+    .panel.panel-default.panel-custom
       .panel-heading
         strong #{settings.locale.ex_latest_transactions}
       table.table.table-bordered.table-striped.summary-table 

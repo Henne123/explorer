@@ -71,16 +71,16 @@ body {
 	overflow: hidden;
 }
 
-.btn-iquidus {
+.btn-custom {
 	background-color: #222;
 	color: #fff;
 }
 
-button.btn-iquidus:hover{
+button.btn-custom:hover{
 	color: #CCC;
 }
 
-.label-iquidus {
+.label-custom {
 	background-color: #222;
 	color: #fff;	
 }
@@ -105,12 +105,12 @@ button.btn-iquidus:hover{
  margin-bottom: 5px;
 }
 
-.panel-iquidus {
+.panel-custom {
 	border-color:#CCC;
 	color:#333;
 }
 
-.panel-iquidus .panel-heading, .panel-iquidus .panel-footer {
+.panel-custom .panel-heading, .panel-custom .panel-footer {
 	background:#222;
 	border-color:#CCC;
 	color:#fff;
@@ -194,4 +194,9 @@ tr {
 	.nav-search input {
 	    width: 200px !important;
     }
+}
+.qrcode {
+	position: absolute;
+	top: 65px;
+	right: 15px;
 }

@@ -8,7 +8,7 @@ block content
     .col-md-12(style='text-align:center;')
       img(src='/images/logo.png' style='width:80px;margin: 0px auto 15px auto;')
   .col-xs-12.col-md-10.col-md-offset-1
-    .panel.panel-default.panel-iquidus
+    .panel.panel-default.panel-custom
       .panel-heading
         strong #{settings.symbol} txid: #{tx.txid}
         a(href='/api/getrawtransaction?txid=#{tx.txid}&decrypt=1')
@@ -56,7 +56,7 @@ block content
     else
       .row
         .col-md-6
-          .panel.panel-default.panel-iquidus
+          .panel.panel-default.panel-custom
             .panel-heading
               strong #{settings.locale.tx_contributors}
               span.glyphicon.glyphicon-arrow-right.pull-right
@@ -81,7 +81,7 @@ block content
                           =r.addresses
                       td.danger #{r.amount.toFixed(8)}
         .col-md-6
-          .panel.panel-default.panel-iquidus
+          .panel.panel-default.panel-custom
             .panel-heading
               strong #{settings.locale.tx_recipients}
             table.table.table-bordered.table-striped.summary-table 

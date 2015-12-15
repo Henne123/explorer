@@ -6,7 +6,7 @@ block content
     .col-md-12(style='text-align:center;')
       img(src='/images/logo.png' style='width:80px;margin: 0px auto 15px auto;')
   .col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
-    .panel.panel-default.panel-iquidus
+    .panel.panel-default.panel-custom
       .panel-heading(style='padding-left:25px;padding-right:25px;')       
         .row           
           if block.previousblockhash != null
@@ -75,7 +75,7 @@ block content
       .alert.alert-info(role='alert', style='text-align:center;')   
         strong #{settings.locale.block_genesis}
     else
-      .panel.panel-default.panel-iquidus
+      .panel.panel-default.panel-custom
         .panel-heading
           strong #{settings.locale.ex_latest_transactions}
         table.table.table-bordered.table-striped.summary-table 
@@ -101,4 +101,4 @@ block content
                 td.view_tx 
                   a(href='/tx/#{txn.txid}')
                     span.glyphicon.glyphicon-eye-open.glow 
-  .footer-padding  
+.footer-padding  

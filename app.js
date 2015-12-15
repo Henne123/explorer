@@ -58,7 +58,8 @@ app.use('/ext/getmoneysupply', function(req,res){
 
 app.use('/ext/getaddress/:hash', function(req,res){
   db.get_address(req.param('hash'), function(address){
-    var a_ext = {
+if (address) {    
+var a_ext = {
       address: address.a_id,
       sent: address.sent.toFixed(8),
       received: address.received.toFixed(8),
@@ -66,6 +67,9 @@ app.use('/ext/getaddress/:hash', function(req,res){
       last_txs: address.txs,
     };
     res.send(a_ext);
+} else {
+res.send({ error: 'address not found.', hash: req.param('hash')})
+}
   });
 });
 

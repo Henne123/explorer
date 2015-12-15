@@ -14,7 +14,7 @@ function exit() {
 
 var dbString = "mongodb://" + settings.dbsettings.address;
 dbString = dbString + ":" + settings.dbsettings.port;
-dbString = dbString + "/IQUIDUS-BENCHMARK";
+dbString = dbString + "/custom-BENCHMARK";
 
 mongoose.connect(dbString, function(err) {
   if (err) {
