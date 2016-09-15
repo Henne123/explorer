@@ -80,7 +80,6 @@ custom Explorer is intended to be generic so it can be used with any wallet foll
 Current version: 1.3.3   
 Next planned: 1.3.4
 
-*  Cryptsy (markets)
 *  PoS extraction page
 
 1.4.0
